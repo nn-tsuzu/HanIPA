@@ -1,43 +1,26 @@
-from setuptools import setup
+from glob import glob
+from os.path import basename
+from os.path import splitext
 
-DESCRIPTION = 'Hangul to IPA convertor'
-NAME = 'HanIPA'
-AUTHOR = 'nn-tsuzu'
-URL = 'https://github.com/nn-tsuzu/Hangul-to-IPA'
-LICENSE = 'apache2.0'
-DOWNLOAD_URL = URL
-VERSION = '1.0'
-PYTHON_REQUIRES = '>=3.10'
-INSTALL_REQUIRES = [
-    "g2pk2",
-    "jamo"
-]
-PACKAGES = [
-    'hanipa'
-]
-KEYWORDS = 'hangul ipa nlp'
-CLASSIFIERS=[
-    'License :: OSI Approved :: Apache 2.0 License',
-    'Programming Language :: Python :: 3.10'
-]
-with open('README.md', 'r', encoding='utf-8') as fp:
-    readme = fp.read()
-LONG_DESCRIPTION = readme
-LONG_DESCRIPTION_CONTENT_TYPE = 'text/markdown'
+from setuptools import setup
+from setuptools import find_packages
+
+
+def _requires_from_file(filename):
+    return open(filename).read().splitlines()
+
 
 setup(
-    name=NAME,
-    version=VERSION,
-    description=DESCRIPTION,
-    long_description=LONG_DESCRIPTION,
-    long_description_content_type=LONG_DESCRIPTION_CONTENT_TYPE,
-    author=AUTHOR,
-    maintainer=AUTHOR,
-    url=URL,
-    download_url=URL,
-    packages=PACKAGES,
-    classifiers=CLASSIFIERS,
-    license=LICENSE,
-    keywords=KEYWORDS,
-    install_requires=INSTALL_REQUIRES
+    name="HanIPA",
+    version="1.0",
+    description="Hangul to IPA convertor",
+    author="nn-tsuzu",
+    url="https://github.com/nn-tsuzu/HanIPA.git",
+    packages=find_packages("hanipa"),
+    package_dir={"": "hanipa"},
+    py_modules=[splitext(basename(path))[0] for path in glob('hanipa/*.py')],
+    include_package_data=True,
+    zip_safe=False,
+    install_requires=_requires_from_file('requirements.txt')
 )
+
