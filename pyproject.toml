@@ -17,5 +17,5 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    ""jamo", "g2pk2"",
+    "jamo", "g2pk2",
 ]
