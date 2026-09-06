@@ -16,9 +16,9 @@ setup(
     description="Hangul to IPA convertor",
     author="nn-tsuzu",
     url="https://github.com/nn-tsuzu/HanIPA.git",
-    packages=find_packages("hanipa"),
-    package_dir={"": "hanipa"},
-    py_modules=[splitext(basename(path))[0] for path in glob('hanipa/*.py')],
+    packages=find_packages("src"),
+    package_dir={"": "src"},
+    py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
     include_package_data=True,
     zip_safe=False,
     install_requires=_requires_from_file('requirements.txt')
