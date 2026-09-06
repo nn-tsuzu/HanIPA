@@ -4,14 +4,8 @@
 간단한 규칙기반 한글 to ipa 변환기. TTS 등에 사용할 수 있습니다.
 
 # Install
-1. Clone this repository
 ```
-git clone https://github.com/nn-tsuzu/Hangul-to-IPA.git
-cd Hangul-to-IPA
-```
-2. Install python requirements
-```
-pip install -r requirements.txt
+pip install git+https://github.com/nn-tsuzu/Hangul-to-IPA.git
 ```
 
 # How to use
