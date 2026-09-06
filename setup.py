@@ -11,7 +11,7 @@ def _requires_from_file(filename):
 
 
 setup(
-    name="HanIPA",
+    name="hanipa",
     version="1.0",
     description="Hangul to IPA convertor",
     author="nn-tsuzu",
