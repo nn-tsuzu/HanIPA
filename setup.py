@@ -1,7 +1,7 @@
 from setuptools import setup
 
-DESCRIPTION = 'Hangul-to-IPA: Hangul to IPA convertor'
-NAME = 'Hangul-to-IPA'
+DESCRIPTION = 'Hangul to IPA convertor'
+NAME = 'HanIPA'
 AUTHOR = 'nn-tsuzu'
 URL = 'https://github.com/nn-tsuzu/Hangul-to-IPA'
 LICENSE = 'apache2.0'
@@ -13,7 +13,7 @@ INSTALL_REQUIRES = [
     "jamo"
 ]
 PACKAGES = [
-    'Hangul-to-IPA'
+    'hanipa'
 ]
 KEYWORDS = 'hangul ipa nlp'
 CLASSIFIERS=[
