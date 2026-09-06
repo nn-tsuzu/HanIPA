@@ -1,9 +1,10 @@
-# Hangul-to-IPA
-<img width="1025" height="205" alt="hangul to ipa" src="https://github.com/user-attachments/assets/5d15b115-4e29-41b9-bbaf-a21c0b97fae0" />
+# HanIPA
+<img width="1025" height="205" alt="logo" src="https://github.com/user-attachments/assets/523ba934-a275-406c-ab32-5682f7476bec" />
 
 간단한 규칙기반 한글 to ipa 변환기. TTS 등에 사용할 수 있습니다.
 
 # Install
+
 ```
 pip install git+https://github.com/nn-tsuzu/Hangul-to-IPA.git
 ```
