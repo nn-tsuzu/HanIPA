@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hanipa"
+version = "1.0"
+authors = [
+  { name="nn-tsuzu", email="nntsuzu@gmail.com" },
+]
+description = "Hangul to IPA"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: Apache 2.0 License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    ""jamo", "g2pk2"",
+]
