@@ -1,5 +1,7 @@
 # Hangul-to-IPA
-한글을 IPA로 변환합니다. TTS 등에 사용할 수 있습니다.
+<img width="1025" height="205" alt="hangul to ipa" src="https://github.com/user-attachments/assets/5d15b115-4e29-41b9-bbaf-a21c0b97fae0" />
+
+간단한 규칙기반 한글 to ipa 변환기. TTS 등에 사용할 수 있습니다.
 
 # Install
 1. Clone this repository
@@ -17,8 +19,8 @@ pip install -r requirements.txt
 from Korean_to_IPA import G2P_Korean_to_Phoneme
 
 g2p = G2P_Korean_to_Phoneme()
-text = g2p('사랑해~')
-print(text) # → sʰaɾaŋhɛɛ
+text = g2p('한국인은 자주 김치를 먹어요.')
+print(text) # → hanguginɯn t͡ɕad͡ʑu kimt͡ɕʰiɾɯl mʌgʌj͡o.
 ```
 
 # Output
