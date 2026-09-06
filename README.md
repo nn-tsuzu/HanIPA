@@ -6,12 +6,12 @@
 # Install
 
 ```
-pip install git+https://github.com/nn-tsuzu/Hangul-to-IPA.git
+pip install git+https://github.com/nn-tsuzu/HanIPA.git
 ```
 
 # How to use
 ```
-from Korean_to_IPA import G2P_Korean_to_Phoneme
+from hanipa import G2P_Korean_to_Phoneme
 
 g2p = G2P_Korean_to_Phoneme()
 text = g2p('한국인은 자주 김치를 먹어요.')
